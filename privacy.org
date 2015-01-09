@@ -1,0 +1,132 @@
+#+Title: Tor and Pgp
+#+Author: Evan Misshula
+#+Email: emisshula@jjay.cuny.edu
+
+#+TAGS:       Write(w) Update(u) Fix(f) Check(c) noexport(n) export(e)
+#+OPTIONS: reveal_center:t reveal_progress:t reveal_history:nil reveal_control:t
+#+OPTIONS: reveal_mathjax:t reveal_rolling_links:t reveal_keyboard:t reveal_overview:t num:nil
+#+OPTIONS: reveal_width:1200 reveal_height:800
+#+OPTIONS: toc:nil
+#+REVEAL_MARGIN: 0.1
+#+REVEAL_MIN_SCALE: 0.5
+#+REVEAL_MAX_SCALE: 2.5
+#+REVEAL_TRANS: cube
+#+REVEAL_THEME: simple
+#+REVEAL_HLEVEL: 2
+#+REVEAL_HEAD_PREAMBLE: <meta name="description" content="Org-Reveal Introduction.">
+#+REVEAL_POSTAMBLE: <p> Created by Evan Misshula. </p>
+#+REVEAL_PLUGINS: (highlight markdown)
+
+
+
+
+
+* Evan Misshula							     :export:
+  - GC Digital Fellow
+    - Free Software
+    - Open Science
+    - Open Access
+    - Reproducibility
+  - Criminal Justice
+    - Public Health
+    - Policing
+    - Social Mobility
+* Libraries							     :export:
+  - Political treatises
+  - Alternative histories
+  - Information about organizing
+  - Satire
+  - Information about weapons
+* National Security Letters					     :export:
+  - [[http://www.newyorker.com/tech/elements/what-its-like-to-get-a-national-security-letter][national security letter]]
+  - [[http://www.nytimes.com/2014/11/16/magazine/what-an-uncensored-letter-to-mlk-reveals.html?_r=0][mlk letter]]
+  - [[http://gawker.com/5850054/meet-the-guy-who-snitched-on-occupy-wall-street-to-the-fbi-and-nypd][occupy]]
+** Why do you need Pgp? 					     :export:
+  - [[http://www.pgpi.org/doc/whypgp/en/][Pgp treatise]]
+  - personal, private communications
+  - laws selectively enforced
+    - drugs
+    - parole violations
+    - evidence of being gay
+    - affairs/divorce
+*** Political activities mistaken for terrorism			     :export:
+   - [[http://www.theregister.co.uk/2014/12/08/kaspersky_deets_on_sony_malware/][The Interview]]
+   - [[https://gigaom.com/2015/01/07/fbi-north-korea-got-sloppy-with-ip-addresses-in-sony-hack/][How we know it is N Korea?]]
+*** Envelopes not postcards					     :export:
+    - encryption not invincible
+    - more difficult
+      - government can get it if it's important
+*** How Pgp works						     :export:
+    - Strong Cryptography
+    - Public and Private Keys
+    - Encryption
+    - Decryption
+    - Certificates
+    - Revocation
+*** What is cryptography?					     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/fig1-1.gif]]
+*** Strong cryptography						     :export:
+#+BEGIN_QUOTE
+There are two kinds of cryptography in this world: cryptography that
+will stop your kid sister from reading your files, and cryptography
+that will stop major governments from reading your files. This book is
+about the latter.
+#+END_QUOTE
+--Bruce Schneier, Applied Cryptography: Protocols, Algorithms, and Source Code in C
+*** Public and Private Keys					     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/fig1-3.gif]]
+*** Encryption							     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/fig1-4.gif]]
+*** Decryption							     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/fig1-5.gif]]
+
+*** Certificates						     :export:
+- A /digital certificate/ is information included with a person's
+  public key that helps verify that a key is genuine or valid.
+- A digital certificate is data that functions much like a physical
+  certificate.
+- Don't trust authorities!! [[http://blog.kaspersky.com/regin-apt-most-sophisticated/][Regin attack]]
+
+*** Web of Trust						     :export:
+
+ - Trust is in the eye of the beholder
+ - More information is better.
+ - Cumulative trust model. 
+*** Ways to establish trust					     :export:
+    - direct
+    - chain of trust
+    - multiple chains
+* Tor
+  - /Tor/ is routing network designed to protect the origin of
+    communications
+*** Distributed anonymous network 				     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/htw1.png]]
+*** Picking a path 						     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/htw2.png]]
+*** Another site, another path 					     :export:
+#+ATTR_HTML: :width 850px :alt replication 
+[[./images/htw3.png]]
+
+
+
+* How do we make it better? 					     :export:
+#+ATTR_REVEAL: :frag roll-in
+Use encryption for private communication.
+#+ATTR_REVEAL: :frag roll-in
+Insist other fiduciaries protect our data.
+#+ATTR_REVEAL: :frag roll-in
+Get off Gmail and MSFT
+#+ATTR_REVEAL: :frag roll-in
+Use FREE software
+#+ATTR_REVEAL: :frag roll-in
+ - Evan Misshula
+ - @emisshula
+ - [[http://EvanMisshula.github.io]]
+
+
